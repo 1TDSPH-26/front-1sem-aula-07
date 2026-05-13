@@ -62,32 +62,76 @@
 // console.log(nome2);
 
 // Conversões:
-let numero = "123";
-let numero2 = 123;
-console.log(numero + numero2); // 123
-console.log(numero2 + parseInt(numero)); // 123
-console.log(parseFloat("12.5")); // 12.5
-console.log(numero.toString()); // “123”
+//let numero = "123";
+//let numero2 = 123;
+//console.log(numero + numero2); // 123
+//console.log(numero2 + parseInt(numero)); // 123
+//console.log(parseFloat("12.5")); // 12.5
+//console.log(numero.toString()); // “123”
 
 
 // Métodos de texto e de listas
-let frase = "Estão chegando as provas!";
-console.log(frase.length); // 25 – Retorna a quantidade de caracteres da string
+//let frase = "Estão chegando as provas!";
+//console.log(frase.length); // 25 – Retorna a quantidade de caracteres da string
 
-const frutas = ["maçã","banana","laranja","uva"];
-console.log(frutas.length); // 4 – Retorna a quantidade de itens na lista/array
+//const frutas = ["maçã","banana","laranja","uva"];
+//console.log(frutas.length); // 4 – Retorna a quantidade de itens na lista/array
 
-console.log(frase.indexOf("xx")); // 15 – Retorna a posição da string encontrada
-console.log(frutas.indexOf("limão")); // Retorna a posição na lista do item encontrado caso contrário, retorna -1
+//console.log(frase.indexOf("xx")); // 15 – Retorna a posição da string encontrada
+//console.log(frutas.indexOf("limão")); // Retorna a posição na lista do item encontrado caso contrário, retorna -1
 
-console.log(frase.replace("provas", "férias")); // “Estão chegando as férias!”
-frutas.splice(1,1,"limão");//Em listas utilizamos o splice para remover e substituir elementos em determinadas posições.
-console.log(frutas);
-frutas[1] = "uva";
-console.log(frutas{1});
+//console.log(frase.replace("provas", "férias")); // “Estão chegando as férias!”
+//frutas.splice(1,1,"limão");//Em listas utilizamos o splice para remover e substituir elementos em determinadas posições.
+//console.log(frutas);
+//frutas[1] = "uva";
+//console.log(frutas[1]);
 
 
 // Formatação de número:
-let valor = 123.456;
-console.log(valor.toFixed(2)); // “123.46”
-console.log(valor.toPrecision(4)); // “123.5”
+//let valor = 123.456;
+//console.log(valor.toFixed(2)); // “123.46”
+//console.log(valor.toPrecision(4)); // “123.5”
+
+//console.log(2+2);
+//console.log(2-2);
+//console.log(2*2);
+//console.log(2/2);
+//console.log(2%2);
+//console.log(2**2);
+
+//console.log(2 > 2);
+//console.log(2 >= 2);
+//console.log(2 < 2);
+//console.log(2 <= 2);
+//console.log(2 == 2);
+//console.log(2 != 2);
+//console.log(2 === 2);
+//console.log(2 !== 2);
+
+//Variáveis pós incrementada
+//let x = 10
+//console.log(x++);
+//console.log(x);
+//console.log(++x);
+
+
+//Exemplo de acumulação
+//let x = 10;
+//x += 5;
+//console.log(x);
+//
+//x -= 5;
+//console.log(x);
+//
+//x *= 5;
+//console.log(x);
+
+//x /= 5;
+//console.log(x);
+
+//x %= 5;
+//console.log(x);
+
+//x **= 5;
+//console.log(x);
+
