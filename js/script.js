@@ -135,3 +135,32 @@
 //x **= 5;
 //console.log(x);
 
+//Estruturas de repetição:
+
+let energia = 100;
+executar();
+
+function executar(){
+  const intervalo = await setInterval( function(){
+      energia -= 5;
+      console.log("Sistema operando...");
+  if(energia <=0){
+      clearInterval(intervalo);
+      console.log("Sistema parado...");
+   }
+  }, 2000 ); 
+}
+
+
+//while (energia > 0) {
+//console.log("Sistema operando...");
+//energia -= 5;
+// Reduz a cada ciclo
+// }
+
+//forOf
+//forIn
+//ForEach
+//map
+//filter
+//reduce
