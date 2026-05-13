@@ -75,7 +75,29 @@ comentario de bloco
 // console.log(valor.toPrecision(4)); // “123.5”
 
 //Variaveis pós e pré icrementada
-let x = 10
-console.log(x++)
-console.log(x)
-console.log(++x)
+// let x = 10
+// console.log(x++)
+// console.log(x)
+// console.log(++x)
+
+
+
+let energia = 100;
+executar()
+
+function executar(){
+    const intervalo = setInterval(function(){
+        energia -= 5;
+        console.log("Sistema operando...", energia);
+        if(energia <=0){
+    clearInterval(intervalo)
+    console.log("Sistema parando...")
+}
+    }, 2000);
+}
+//estrutura de repetição
+
+// while (energia > 0) {
+    // console.log("Sistema operando...");
+    // Reduz a cada ciclo
+    // } 
