@@ -54,25 +54,27 @@ console.log("O resultado da soma: " + (nr1 + parent(nr2))); */
 // console.log(nome2);
 
 // Conversões
-let numero = 123;
-let numero2 = "123";
-console.log(numero + numero2); //123123
-console.log(numero + parent(numero2)); //246
-console.log(parseFloat(numero)); //12.3
-console.log(numero.toString()); //"123"
+// let numero = 123;
+// let numero2 = "123";
+// console.log(numero + numero2); //123123
+// console.log(numero + parent(numero2)); //246
+// console.log(parseFloat(numero)); //12.3
+// console.log(numero.toString()); //"123"
 
-// Métodos de texto
-let frase = "Estão chegando as provas";
-const frutas = ["maçã", "banana", "laranja", "uva"]; //Lista (Array) em JavaScript
-console.log(frase.length); //25 - quantidade de caracteres na String com os espaços
-console.log(frutas.length); //Quantidade de indices na lista
-console.log(frase.indexOf("as")); //15 - posição da string especificada
-console.log(frutas.indexOf("maçã")); //0 - retorna a posição do item na lista, caso contrário retorna -1
-console.log(frase.replace("provas", "férias")); //"Estão chegando as férias"
-frutas.splice(1, 1, "limão"); //Replace em listas
-console.log(frutas);
+// // Métodos de texto
+// let frase = "Estão chegando as provas";
+// const frutas = ["maçã", "banana", "laranja", "uva"]; //Lista (Array) em JavaScript
+// console.log(frase.length); //25 - quantidade de caracteres na String com os espaços
+// console.log(frutas.length); //Quantidade de indices na lista
+// console.log(frase.indexOf("as")); //15 - posição da string especificada
+// console.log(frutas.indexOf("maçã")); //0 - retorna a posição do item na lista, caso contrário retorna -1
+// console.log(frase.replace("provas", "férias")); //"Estão chegando as férias"
+// frutas.splice(1, 1, "limão"); //Replace em listas
+// console.log(frutas);
 
-//Formatação de números
-let valor = 123.456
-console.log(valor.toFixed(2)); //Retorna o número com 2 casas decimáis
-console.log(valor.toPrecision(4)); //valor com 4 dígitos apenas
+// //Formatação de números
+// let valor = 123.456
+// console.log(valor.toFixed(2)); //Retorna o número com 2 casas decimáis
+// console.log(valor.toPrecision(4)); //valor com 4 dígitos apenas
+
+
