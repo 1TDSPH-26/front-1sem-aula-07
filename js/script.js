@@ -1,14 +1,17 @@
-//Declaração de variáveis
-//3 tipos: var | let | const
 
-//declaração com var
-// var nome = "FIAP";
-// console.log("A mehlor faculdade: " + nome);
+//Declaração de variáveis com JS
+//3 tipos = var / let / const
+/*
+*Comentário de Bloco
+*/
 
-// var num1 = 10;
-// var num2 = "5";
+//Declaração com var:
+// var nome = "Fiap";
+// console.log("A melhor faculdade : " + nome);
 
-// console.log("Resultado da soma: " + (num1+parseInt(num2)));
+// var nr1 = 10;
+// var nr2 = "5";
+// console.log("Resultado da soma : " + ( nr1 + parseInt(nr2) ));
 
 // var variavel = "Alê";
 // console.log(typeof variavel);
@@ -34,26 +37,56 @@
 // variavel = 100.456;
 // console.log(typeof variavel);
 
-//Criando um ternário e mexendo em cálculo
+// //Criando um ternário e mexendo com cálculos:
 
-let idade = 17;
+// let idade = 17;
 
-const resultado = idade > 18 ? "Pode passear": "Não pode passear";
+// const resultado = idade > 18 ? "Pode passear" : "Não pode passear";
 
-//Utilizando template literals ´´ com a interpolação ${}
-// console.log(`O resultado é que ele ${resultado.toLowerCase()}.`)
+// //Utilizando template literals `` com interpolação ${ }
+// console.log(`O resultado é que ele ${resultado.toLowerCase()}.`);
 
-//Diferença entre var e let
-var nome1 = "Alê";
-var nome2 = "Carlos";
 
-if(true)
-{
-    //Declarando as variáveis em escopo diferente
-    var nome1 = "Joaquim";
-    let nome2 = "das Couves";
-}
+//Diferença entre var e let:
+// var nome1 = "Alê";
+// let nome2 = "Carlos";
 
-//Imprimir as variáveis do escopo principal
-console.log(nome1);
-console.log(nome2);
+// if(true){
+//     //Redeclarando as variáveis em escopo diferente
+//     var nome1 = "Joaquim";
+//     let nome2 = "das Couves";
+// }
+
+// //Imprimir as variáveis do escopo principal!
+// console.log(nome1);
+// console.log(nome2);
+
+//conversão 
+let numero = "123";
+let numero2 = 123;
+console.log(numero + numero2);
+console.log(parseInt(numero) + numero2);
+console.log(parseFloat("12.5"));
+console.log(numero2.toString());
+
+//Métodos de texto e de listas
+let frase = "Estão chegando as provas!";
+const frutas = ["maçã", "banana", "laranja", "uva"]
+console.log(frase.length);
+console.log(frutas.length);
+//retorna a posição do elemento, caso contrário, retorna -1
+console.log(frase.indexOf("as"));
+console.log(frutas[1].indexOf("an"));
+
+console.log(frase.replace("provas", "férias"));
+let fruta = frutas.splice(1,1,"limão")
+console.log(frutas);
+console.log(fruta)
+
+//formatação de número
+let valor = 123.456;
+console.log(valor.toFixed(2));
+console.log(valor.toPrecision(4));
+
+
+
