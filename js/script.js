@@ -50,26 +50,32 @@ comentario de bloco
 // console.log(nome1);
 // console.log(nome2);
 // Conversões:
-let numero = "123";
-console.log(parseInt(numero)); // 123
-console.log(parseFloat("12.5")); // 12.5
-console.log(numero.toString()); // “123”
-// Métodos de texto e lista:
-let frase = "Estão chegando as provas!";
-console.log(frase.length); // 26 – Retorna a quantidade de caracteres da string
+// let numero = "123";
+// console.log(parseInt(numero)); // 123
+// console.log(parseFloat("12.5")); // 12.5
+// console.log(numero.toString()); // “123”
+// // Métodos de texto e lista:
+// let frase = "Estão chegando as provas!";
+// console.log(frase.length); // 26 – Retorna a quantidade de caracteres da string
 
-const frutas = ["maçã","banana","uva","laranja"]
-console.log(frutas.length); // 4 – Retorna a quantidade de itens na lista
+// const frutas = ["maçã","banana","uva","laranja"]
+// console.log(frutas.length); // 4 – Retorna a quantidade de itens na lista
 
 
-console.log(frase.indexOf("as")); // 15 – Retorna a posição da string encontrada
-console.log(frutas.indexOf("limão")); //  – Retorna a posição da string encontrada, caso ao contrario  ele retorna -1
+// console.log(frase.indexOf("as")); // 15 – Retorna a posição da string encontrada
+// console.log(frutas.indexOf("limão")); //  – Retorna a posição da string encontrada, caso ao contrario  ele retorna -1
 
-console.log(frase.replace("provas", "férias")); // “Estão chegando as férias!”
-frutas.splice(1,1,"limão")// em listas utilizamos o splice para remover ou substituir elementos em uma determinada poscição
-console.log(frutas);
+// console.log(frase.replace("provas", "férias")); // “Estão chegando as férias!”
+// frutas.splice(1,1,"limão")// em listas utilizamos o splice para remover ou substituir elementos em uma determinada poscição
+// console.log(frutas);
 
-// Formatação de número:
-let valor = 123.456;
-console.log(valor.toFixed(2)); // “123.46”
-console.log(valor.toPrecision(4)); // “123.5”
+// // Formatação de número:
+// let valor = 123.456;
+// console.log(valor.toFixed(2)); // “123.46”
+// console.log(valor.toPrecision(4)); // “123.5”
+
+//Variaveis pós e pré icrementada
+let x = 10
+console.log(x++)
+console.log(x)
+console.log(++x)
