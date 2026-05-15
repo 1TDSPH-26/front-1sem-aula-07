@@ -137,19 +137,19 @@
 
 //Estruturas de repetição:
 
-let energia = 100;
-executar();
+//let energia = 100;
+//executar();
 
-function executar(){
-  const intervalo = await setInterval( function(){
-      energia -= 5;
-      console.log("Sistema operando...");
-  if(energia <=0){
-      clearInterval(intervalo);
-      console.log("Sistema parado...");
-   }
-  }, 2000 ); 
-}
+//function executar(){
+//  //const intervalo = await setInterval( function(){
+//      energia -= 5;
+//      console.log("Sistema operando...");
+//  if(energia <=0){
+//      clearInterval(intervalo);
+      //console.log("Sistema parado...");
+   //}
+ // }, 2000 ); 
+//}
 
 
 //while (energia > 0) {
@@ -164,3 +164,28 @@ function executar(){
 //map
 //filter
 //reduce
+
+
+//Recebendo parametro atraves do operador SPREAD:
+/Arrow-Function
+ const soma = (...args) => {
+    let resultado = 0;
+    
+    for(let x = 0; x < args.length ; x++){
+        resultado += args[x];
+    }
+
+    console.log("Resultado da operação:", resultado);
+    return resultado;
+}
+
+//  console.log("Executado no escopo principal!");
+
+soma(2,2,4,2);
+
+const valida = ()=> 2 > 1;
+
+// const intervalo = setInterval( ()=>{
+//     window.location.href = "./index.html"
+//     clearInterval(intervalo);
+// }, 5000);
