@@ -173,7 +173,17 @@ const soma = (...args) => {
 
 //  console.log("Executado no escopo principal!");
 
-soma(2,2,4,2);
+// soma(2,2,4,2);
 
-const valida = () => 2 > 1;
+// const valida = () => 2 > 1; //FALOU EM FUNÇÃO USAR ESSA
+
+// const intervalo = setInterval( ()=>{
+//     window.location.href = "./index.html"
+//     clearInterval(intervalo);
+// }, 5000);
+
+
+
+
+
 
