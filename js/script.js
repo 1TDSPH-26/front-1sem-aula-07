@@ -179,6 +179,20 @@
 //     clearInterval(intervalo);
 // }, 5000);
 
-const botaoEntrar = document.getElementById("BtnEntrar")
-console.log(botaoEntrar.textContent);
-boataoEntrar.textContent = "Ok";
+// const botaoEntrar = document.getElementById("BtnEntrar")
+// console.log(botaoEntrar.textContent);
+// boataoEntrar.textContent = "Ok";
+// botaoEntrar.style.backgroundColor = "yellow";
+
+const botaoEntrar = document.getElementById("btnEntrar")
+
+// botaoEntrar.addEventListener("evento" , função de callback anônima)
+botaoEntrar.addEventListener("cick" , ()=>{
+    console.log("CLIQUEI NO BOTÃO");
+
+    //PARA CASA
+    //Capture os campos de EMAIL e SENHA
+    //IMPRIMIR SEUS VALORES NO CONSOLE
+
+} );
+
