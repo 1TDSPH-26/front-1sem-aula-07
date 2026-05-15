@@ -134,7 +134,11 @@
 // x **= 5;
 // console.log(x);
 
-
+// function soma(a=0,b=0){
+//     let resultado = a+b;
+//     console.log("Resultado da operação:");
+//     return resultado;
+// }
 
 //Recebendo parâmetros através do operador SPREAD:
 // function soma(...args){
@@ -151,7 +155,6 @@
 // //  console.log("Executado no escopo principal!");
 
 // soma(2,2,4,2);
-
 
 //Arrow-Function
 //  const soma = (...args) => {
@@ -171,8 +174,39 @@
 
 // const valida = () => 2 > 1;
 
-const intervalo = setInterval( ()=>{
-    window.location.href = "./index.html"
-    clearInterval(intervalo);
-}, 5000);
+// const intervalo = setInterval( ()=>{
+//     window.location.href = "./index.html"
+//     clearInterval(intervalo);
+// }, 5000);
 
+// const botaoEntrar = document.getElementById("btnEntrar")
+// console.log(botaoEntrar.textContent);
+// botaoEntrar.textContent = "OK";
+// botaoEntrar.style.backgroundColor = "yellow";
+// const pessoa = {
+//     nome : "nome",
+//     idade : 33,
+//     correr : ()=>{
+
+//     }
+// }
+
+// function soma2 (){
+//     return a+b;
+// }
+
+// const soma = () => {
+//     return a+b;
+// }
+
+const botaoEntrar = document.getElementById("btnEntrar");
+
+// botaoEntrar.addEventListener("evento" , função de callback anônima );
+botaoEntrar.addEventListener("click" , ()=>{
+    console.log("CLIQUEI NO BOTÃO");
+} );
+
+
+    //PARA CASA
+    //CApture os campos de EMAIL e SENHA
+    //Imprimir seus valores no console
