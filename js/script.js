@@ -114,8 +114,15 @@ function executar(){
 // //
 //
 
-const intervalo = setInterval( ()=>{
-    window.location.href = "../index.html";
-    clearInterval(intervalo);
-}, 5000 );
+// const intervalo = setInterval( ()=>{
+//     window.location.href = "../index.html";
+//     clearInterval(intervalo);
+// }, 5000 );
 
+const botaoEntrar = document.getElementById("btnEntrar");
+console.log(botaoEntrar);
+botaoEntrar.addEventListener("click",  ()=>{
+
+    console.log("Cliquei no Botão")
+
+});
