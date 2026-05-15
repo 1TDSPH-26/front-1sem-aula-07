@@ -35,25 +35,15 @@
     line-height: 1.5;
 }
 
-<<<<<<< HEAD
 @media (min-width:320px) and (max-width: 425px){
     .hero{
         height: 45%;
-=======
-@media (min-width: 320px) and (max-width: 425px){
-    .hero{
-        height: 65%;
->>>>>>> pf0670
     }
     
     .hero__container{
       padding: 5%;
       justify-content: flex-start;
-<<<<<<< HEAD
       gap: 2rem;
-=======
-      gap:2rem;
->>>>>>> pf0670
     }
 
     .hero__title{
