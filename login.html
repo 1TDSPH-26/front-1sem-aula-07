@@ -6,7 +6,7 @@
     <title>ESPORTE TOTAL - LOGIN</title>
     <link rel="stylesheet" href="./css/main.css" />
 
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 
 
   </head>
@@ -42,9 +42,7 @@
                   placeholder="Digite seu email"
                   minlength="13"
                   maxlength="150"
-                  required
-                  oninvalid="setCustomValidity(`Existem erros no campo ${this.name}.`)"
-                />
+                  required />
               </div>
               <div>
                 <label for="idSenha">Senha</label>
@@ -55,12 +53,10 @@
                   placeholder="Digite sua senha"
                   minlength="5"
                   maxlength="30"
-                  required
-                  oninvalid="setCustomValidity(`Existem erros no campo ${this.name}.`)"
-                />
+                  required />
               </div>
               <div>
-                <button type="submit" id="btnEntrar">Entrar</button>
+<button type="submit" id="btnEntrar">Entrar</button>
             </div>
             </fieldset>
           </form>

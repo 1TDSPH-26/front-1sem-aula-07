@@ -171,9 +171,43 @@
 //
 // const valida = () => 2 > 1;
 
-const intervalo = setInterval( ()=>{
-    window.location.href = "./index.html"
-    clearInterval(intervalo);
-}, 5000);
+// const intervalo = setInterval( ()=>{
+//     window.location.href = "./index.html"
+//     clearInterval(intervalo);
+// }, 5000);
+
+// const botaoEntrar = document.getElementById("btnEntrar")
+// console.log(botaoEntrar.textContent);
+// botaoEntrar.textContent = "Ok";
+// botaoEntrar.style.backgroundColor = "yellow";
+
+// const pessoa = {
+//     nome : "nome",
+//     idade : 33,
+//     correr : ()=>{
+
+//     }
+// }
+
+// function soma2 (){
+//     return a+b;
+// }
+
+// const soma = () => {
+//     return a+b;
+// }
+
+const botaoEntrar = document.getElementById("btnEntrar")
+
+// botaoEntrar.addEventListener("evento" , função de callback anônima );
+botaoEntrar.addEventListener("click" , ()=>{
+
+    console.log("CLIQUE NO BOTÃO");
+
+    //PARA CASA
+    //Captura os campos de EMAIL e SENHA
+    //Imprimir seus valores no console
+
+} );
 
 
