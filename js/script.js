@@ -169,3 +169,13 @@
 //     clearInterval(intervalo);
 // }, 5000)
 
+// const botaoEntrar = document.getElementById("btnEntrar")
+// console.log(botaoEntrar.textContent);
+// botaoEntrar.textContent = "ok";
+// botaoEntrar.style.backgroundColor = "yellow";
+
+const botaoEntrar = document.getElementById("btnEntrar")
+// botaoEntrar.addEventListener("evento", função de callback)
+botaoEntrar.addEventListener("click", () => {
+    console.log("Cliquei no botão");
+})

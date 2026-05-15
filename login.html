@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESPORTE TOTAL - LOGIN</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header class="cabecalho">
@@ -31,15 +31,14 @@
                 <div>
                     <label for="idEmail">Email</label>
                     <input type="email" name="email" id="idEmail" placeholder="Digite seu email" 
-                    minlength="15" maxlength="150" required oninvalid="setCustomValidity('Existem erros no campo ${this.name}!')">
+                    minlength="15" maxlength="150" required>
                 </div>
                 <div>
                     <label for="idSenha">Senha</label>
                     <input type="password" name="senha" id="idSenha" placeholder="Digite sua senha" 
-                    minlength="5" maxlength="30" required oninvalid="setCustomValidity('Existem erros no campo ${this.name}!')">
-                </div>
+                    minlength="5" maxlength="30" required>
                 <div>
-                    <button type="submit" id="btnEntrar">Entrar</button>
+                    <button onclick="" type="submit" id="btnEntrar">Entrar</button>
                 </div>
             </fieldset>
           </form>
