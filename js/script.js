@@ -214,4 +214,20 @@ function executar() {
 //     clearInterval(intervalo);
 // }, 5000);
 
+// const botaoEntrar = document.getElementById("btnEntrar")
+// console.log(botaoEntrar.textContent);
+// botaoEntrar.textContent = "OK";
+// botaoEntrar.style.backgroundColor = "yellow";
+
+const botaoEntrar = document.getElementById("btnEntrar");
+
+// botaoEntrar.addEventListener("evento" , função de callback anônima );
+botaoEntrar.addEventListener("click" , ()=>{
+    console.log("CLIQUEI NO BOTÃO");
+
+    //PARA CASA
+    //Capture os campos de EMAIL e SENHA
+    //Imprimir seus valores no console
+
+} );
 
