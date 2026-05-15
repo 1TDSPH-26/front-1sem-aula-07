@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-content: space-around;
+    
 
     /* OVERLAY */
     background-image: linear-gradient(rgba(55, 0, 0, 0.5)) , url("../img/img-01-fundo-hero.jpg");
@@ -35,15 +35,25 @@
     line-height: 1.5;
 }
 
+<<<<<<< HEAD
 @media (min-width:320px) and (max-width: 425px){
     .hero{
         height: 45%;
+=======
+@media (min-width: 320px) and (max-width: 425px){
+    .hero{
+        height: 65%;
+>>>>>>> pf0670
     }
     
     .hero__container{
       padding: 5%;
       justify-content: flex-start;
+<<<<<<< HEAD
       gap: 2rem;
+=======
+      gap:2rem;
+>>>>>>> pf0670
     }
 
     .hero__title{
@@ -51,8 +61,8 @@
     }
 
     .hero__text{
-        line-height: 1rem;
-        font-size: 1.3rem;
+        line-height: 2rem;
+        font-size: 1.8rem;
         margin: 1% 0;
     }
 }

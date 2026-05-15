@@ -19,7 +19,11 @@
 
 .cabecalho__list-item {
   display: inline-block;
+<<<<<<< HEAD
   margin: 0 2rem;
+=======
+  margin:0 2rem;
+>>>>>>> pf0670
 }
 
 @media (min-width: 320px) and (max-width: 425px){
