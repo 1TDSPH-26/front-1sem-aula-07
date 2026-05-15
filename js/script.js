@@ -1,3 +1,4 @@
+// ---------------------------- Aula 3 ----------------------------
 
 //Declaração de variáveis com JS
 //3 tipos = var / let / const
@@ -66,6 +67,8 @@ de onde foi declarada - escopo)
 (O let faz o que seria o certo:
 Em variáveis com o mesmo nome, ele prioriza o valor de onde foi declarado.)
 */
+
+// ---------------------------- Aula 4 ----------------------------
 
 // Conversões:
 // let numero = "123";
@@ -140,6 +143,8 @@ Em variáveis com o mesmo nome, ele prioriza o valor de onde foi declarado.)
 // x **= 5;
 // console.log(x);
 
+// ---------------------------- Aula 5 ----------------------------
+
 //Função tradicional:
 // function soma(a=0, b=0){
 //     let resultado = a+b;
@@ -159,3 +164,28 @@ Em variáveis com o mesmo nome, ele prioriza o valor de onde foi declarado.)
 // // console.log("Executando no escopo principal.");
 
 // soma(2,2,4,2);
+
+//Arrow-function - função declarada e anônima 
+//  const soma = (...args) => {
+//     let resultado = 0;
+    
+//     for(let x = 0; x < args.length ; x++){
+//         resultado += args[x];
+//     }
+
+//     console.log("Resultado da operação:", resultado);
+//     return resultado;
+// }
+
+// //  console.log("Executado no escopo principal!");
+
+// soma(2,2,4,2);
+
+// // Utilizar esta:
+// const valida = () => 2 > 1;
+
+// Classe Window para manipular redirecionamento
+const intervalo = setInterval( ()=>{
+    window.location.href = "./index.html"
+    clearInterval(intervalo);
+}, 5000);
