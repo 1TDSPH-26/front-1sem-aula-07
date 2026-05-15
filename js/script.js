@@ -184,8 +184,25 @@ Em variáveis com o mesmo nome, ele prioriza o valor de onde foi declarado.)
 // // Utilizar esta:
 // const valida = () => 2 > 1;
 
-// Classe Window para manipular redirecionamento
-const intervalo = setInterval( ()=>{
-    window.location.href = "./index.html"
-    clearInterval(intervalo);
-}, 5000);
+// // Classe Window para manipular redirecionamento
+// const intervalo = setInterval( ()=>{
+//     window.location.href = "./index.html"
+//     clearInterval(intervalo);
+// }, 5000);
+
+
+// ---- JS botão ----
+// const botaoEntrar = document.getElementById("btnEntrar")
+// console.log(botaoEntrar.textContent);
+// botaoEntrar.textContent = "OK";
+// botaoEntrar.style.backgroundColor = "yellow";
+
+const botaoEntrar = document.getElementById("btnEntrar");
+
+// botaoEntrar.addEventListener("Evento", Função de callback anônima);
+botaoEntrar.addEventListener("click" , ()=>{
+    console.log("CLIQUEI NO BOTÃO");
+    //PARA CASA
+    //CApture os campos de EMAIL e SENHA
+    //Imprimir seus valores no console
+} );

@@ -1,12 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESPORTE TOTAL - LOGIN</title>
     <link rel="stylesheet" href="./css/main.css" />
-
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script> 
+    <!-- O defer faz com que o JS seja carregado junto do html, com um pequeno delay de segundos. -->
   </head>
   <body>
     <header class="cabecalho">
@@ -41,9 +41,6 @@
                   minlength="13"
                   maxlength="150"
                   required
-                  oninvalid="
-                    setCustomValidity(`Existem erros no campo ${this.name}.`)
-                  "
                 />
               </div>
               <div>
@@ -56,9 +53,6 @@
                   minlength="5"
                   maxlength="30"
                   required
-                  oninvalid="
-                    setCustomValidity(`Existem erros no campo ${this.name}.`)
-                  "
                 />
               </div>
               <div>
