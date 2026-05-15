@@ -82,22 +82,51 @@ comentario de bloco
 
 
 
-let energia = 100;
-executar()
+// let energia = 100;
+// executar()
 
-function executar(){
-    const intervalo = setInterval(function(){
-        energia -= 5;
-        console.log("Sistema operando...", energia);
-        if(energia <=0){
-    clearInterval(intervalo)
-    console.log("Sistema parando...")
-}
-    }, 2000);
-}
+// function executar(){
+//     const intervalo = setInterval(function(){
+//         energia -= 5;
+//         console.log("Sistema operando...", energia);
+//         if(energia <=0){
+//     clearInterval(intervalo)
+//     console.log("Sistema parando...")
+// }
+//     }, 2000);
+// }
 //estrutura de repetição
 
 // while (energia > 0) {
     // console.log("Sistema operando...");
     // Reduz a cada ciclo
     // } 
+
+    // function soma(a=0,b=0){
+    //     let resultado = a + b
+    //     console.log("Resultado da operação", resultado);
+    //     return resultado
+    // }
+
+    // //console.log("Executando no escopo principal!!");
+
+    // soma(2,2);
+
+    // Recebendo parametros atraves do operador SPREAD
+
+
+    function soma(...args){
+        let resultado = 0
+
+        for(let x = 0; x < args.length; x++);{
+        resultado += args[x];
+        }
+
+        
+        console.log("Resultado da operação", resultado);
+        return resultado
+    }
+
+    //console.log("Executando no escopo principal!!");
+
+    soma(2,2,4,2);
