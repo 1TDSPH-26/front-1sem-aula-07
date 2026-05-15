@@ -208,3 +208,10 @@ function executar() {
 // soma(2,2,4,2);
 
 // const valida = () => 2 > 1;
+
+// const intervalo = setInterval( ()=>{
+//     window.location.href = "./index.html"
+//     clearInterval(intervalo);
+// }, 5000);
+
+
