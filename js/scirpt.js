@@ -133,3 +133,35 @@
 
 // x **= 5;
 // console.log(x);
+
+//Estruturas de repetição:
+
+let energia = 100;
+executar();
+ 
+function executar() {
+    const intervalo = setInterval(function () {
+        energia -= 5;
+        console.log("Sistema operando...", energia);
+    if (energia <= 0) {
+        clearInterval(intervalo);
+        console.log("Sistema parado...");
+    }
+}, 2000);
+}
+//Aplicação: Quando o número de repetições depende de um fator externo (ex: aguardar resposta de um sensor).
+ 
+ 
+ 
+// while (energia > 0) {
+//     console.log("Sistema operando...");
+//     energia -= 5;
+// // Reduz a cada ciclo
+// }
+ 
+//forOf
+//forIn
+//map
+//filter
+//reduce
+//forEach
