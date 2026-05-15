@@ -164,3 +164,28 @@ function executar() {
 //filter
 //reduce
 //forEach
+
+
+
+//Recebendo parâmetros através do operador SPREAD:
+// function soma(a=0,b=0){
+//     let resultado = a+b;
+//     console.log("Resultado da operação:");
+//     return resultado;
+// }
+
+//Recebendo parâmetros através do operador SPREAD:
+// function soma(...args){
+//     let resultado = 0;
+    
+//     for(let x = 0; x < args.length ; x++){
+//         resultado += args[x];
+//     }
+
+//     console.log("Resultado da operação:", resultado);
+//     return resultado;
+// }
+
+// //  console.log("Executado no escopo principal!");
+
+// soma(2,2,4,2);
