@@ -134,54 +134,27 @@
 // x **= 5;
 // console.log(x);
 
-//Estruturas de repetição:
-
-// let energia = 100;
-// executar();
-
-
-/*
-function executar() {
-    const intervalo = setInterval(function () {
-        energia -= 5;
-        console.log("Sistema operando...", energia);
-    if (energia <= 0) {
-        clearInterval(intervalo);
-        console.log("Sistema parado...");
-    }
-}, 2000);
-}
-*/
-//Aplicação: Quando o número de repetições depende de um fator externo (ex: aguardar resposta de um sensor).
- 
-// while (energia > 0) {
-//     console.log("Sistema operando...");
-//     energia -= 5;
-// // Reduz a cada ciclo
+// function soma(a=0,b=0){
+//     let resultado = a+b;
+//     console.log("Resultado da operação:");
+//     return resultado;
 // }
- 
-//forOf
-//forIn
-//map
-//filter
-//reduce
-//forEach
 
-// Recebendo parâmetros através do operador SPREAD:
+//Recebendo parâmetros através do operador SPREAD:
 // function soma(...args){
 //     let resultado = 0;
-
+    
 //     for(let x = 0; x < args.length ; x++){
 //         resultado += args[x];
 //     }
-    
+
 //     console.log("Resultado da operação:", resultado);
 //     return resultado;
 // }
 
 // //  console.log("Executado no escopo principal!");
 
-//  console.log(soma(2,2,4));
+// soma(2,2,4,2);
 
 //Arrow-Function
 //  const soma = (...args) => {
@@ -203,5 +176,37 @@ function executar() {
 
 // const intervalo = setInterval( ()=>{
 //     window.location.href = "./index.html"
-//     clearInterval(intervalo)
+//     clearInterval(intervalo);
 // }, 5000);
+
+// const botaoEntrar = document.getElementById("btnEntrar")
+// console.log(botaoEntrar.textContent);
+// botaoEntrar.textContent = "OK";
+// botaoEntrar.style.backgroundColor = "yellow";
+// const pessoa = {
+//     nome : "nome",
+//     idade : 33,
+//     correr : ()=>{
+
+//     }
+// }
+
+// function soma2 (){
+//     return a+b;
+// }
+
+// const soma = () => {
+//     return a+b;
+// }
+
+const botaoEntrar = document.getElementById("btnEntrar");
+
+// botaoEntrar.addEventListener("evento" , função de callback anônima );
+botaoEntrar.addEventListener("click" , ()=>{
+    console.log("CLIQUEI NO BOTÃO");
+
+    //PARA CASA
+    //CApture os campos de EMAIL e SENHA
+    //Imprimir seus valores no console
+
+} );
