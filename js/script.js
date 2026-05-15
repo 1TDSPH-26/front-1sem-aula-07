@@ -154,19 +154,25 @@
 
 
 //Arrow-Function
- const soma = (...args) => {
-    let resultado = 0;
+//  const soma = (...args) => {
+//     let resultado = 0;
     
-    for(let x = 0; x < args.length ; x++){
-        resultado += args[x];
-    }
+//     for(let x = 0; x < args.length ; x++){
+//         resultado += args[x];
+//     }
 
-    console.log("Resultado da operação:", resultado);
-    return resultado;
-}
+//     console.log("Resultado da operação:", resultado);
+//     return resultado;
+// }
 
-//  console.log("Executado no escopo principal!");
+// //  console.log("Executado no escopo principal!");
 
-soma(2,2,4,2);
+// soma(2,2,4,2);
 
-const valida = () => 2 > 1;
+// const valida = () => 2 > 1;
+
+const intervalo = setInterval( ()=>{
+    window.location.href = "./index.html"
+    clearInterval(intervalo);
+}, 5000);
+
