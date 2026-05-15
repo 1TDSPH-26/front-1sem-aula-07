@@ -158,5 +158,19 @@ comentario de bloco
 //     clearInterval(intervalo);
 // }, 5000);
 
+// const botaoEntrar = document.getElementById("btnEntrar")
+// console.log(botaoEntrar.textContent);
+// botaoEntrar.textContent = "OK"
+// botaoEntrar.style.backgroundColor = "yellow"
 
+const botaoEntrar = document.getElementById("btnEntrar")
+// botaoEntrar.addEventListener("evento",fuçao de callback anonima);
+botaoEntrar.addEventListener("click", () => {
+    console.log("Clique no Botão");
+
+    //PARA CASA
+    //CApture os campos de EMAIL e SENHA
+    //Imprimir seus valores no console
+
+});
 

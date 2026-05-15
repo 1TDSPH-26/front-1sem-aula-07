@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESPORTE TOTAL - LOGIN</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/script.js"></script>
-  
+
+    <script src="./js/script.js" defer></script>
+
+
   </head>
   <body>
     <header class="cabecalho">
@@ -33,15 +35,29 @@
               <legend>Login</legend>
               <div>
                 <label for="idEmail">Email</label>
-                <input type="email" name="email" id="idEmail" placeholder="Digite seu email" minlength="13" maxlength="150" required oninvalid="setCustomValidity('Existem erros no campo ${this.name}')" />
+                <input
+                  type="email"
+                  name="email"
+                  id="idEmail"
+                  placeholder="Digite seu email"
+                  minlength="13"
+                  maxlength="150"
+                  required />
               </div>
               <div>
                 <label for="idSenha">Senha</label>
-                <input type="password" name="Senha" id="idSenha" placeholder="Digite sua senha" minlength="5" maxlength="30" required oninvalid="setCustomValidity('Existem erros no campo ${this.name}')" />
-                </div>
-                <div>
-                    <button type="submit" id="btnEntrar">Entrar</button>
-                </div>
+                <input
+                  type="password"
+                  name="senha"
+                  id="idSenha"
+                  placeholder="Digite sua senha"
+                  minlength="5"
+                  maxlength="30"
+                  required />
+              </div>
+              <div>
+<button type="submit" id="btnEntrar">Entrar</button>
+            </div>
             </fieldset>
           </form>
 
@@ -59,5 +75,8 @@
     <footer>
       <p class="unico">ESPORTE TOTAL &copy; - Todos os direitos reservados</p>
     </footer>
+
+
+
   </body>
 </html>
