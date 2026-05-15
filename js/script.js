@@ -147,3 +147,20 @@
 // }
 // //console.log("Executando no escopo principal!");
 // console.log(soma(2, 2, 4));
+
+//arrow function
+
+const soma = (...args) => {
+
+    let resultado = 0;
+    for(let x = 0; x < args.length; x++){
+        resultado += args[x];
+    }
+    
+    console.log("Resultado da operação: ", resultado);
+    return resultado;
+}
+//console.log("Executando no escopo principal!");
+console.log(soma(2, 2, 4));
+
+const valida = () => 2 > 1;
