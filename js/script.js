@@ -189,3 +189,6 @@ const valida = ()=> 2 > 1;
 //     window.location.href = "./index.html"
 //     clearInterval(intervalo);
 // }, 5000);
+
+
+const botaoEntrar = document.getElementById("btnEntrar");
