@@ -179,5 +179,6 @@
 //     clearInterval(intervalo);
 // }, 5000);
 
-const botaoEntrar = document.getElementById()
-console.log(botaoEntrar);
+const botaoEntrar = document.getElementById("BtnEntrar")
+console.log(botaoEntrar.textContent);
+boataoEntrar.textContent = "Ok";
