@@ -206,7 +206,7 @@ botaoEntrar.addEventListener("click" , ()=>{
     console.log("CLIQUEI NO BOTÃO");
 
     //PARA CASA
-    //CApture os campos de EMAIL e SENHA
+    //Capture os campos de EMAIL e SENHA
     //Imprimir seus valores no console
 
 } );
