@@ -136,9 +136,11 @@
 
 //Estruturas de repetição:
 
-let energia = 100;
-executar();
- 
+// let energia = 100;
+// executar();
+
+
+/*
 function executar() {
     const intervalo = setInterval(function () {
         energia -= 5;
@@ -149,9 +151,8 @@ function executar() {
     }
 }, 2000);
 }
+*/
 //Aplicação: Quando o número de repetições depende de um fator externo (ex: aguardar resposta de um sensor).
- 
- 
  
 // while (energia > 0) {
 //     console.log("Sistema operando...");
@@ -165,3 +166,19 @@ function executar() {
 //filter
 //reduce
 //forEach
+
+// Recebendo parâmetros através do operador SPREAD:
+// function soma(...args){
+//     let resultado = 0;
+
+//     for(let x = 0; x < args.length ; x++){
+//         resultado += args[x];
+//     }
+    
+//     console.log("Resultado da operação:", resultado);
+//     return resultado;
+// }
+
+// //  console.log("Executado no escopo principal!");
+
+//  console.log(soma(2,2,4));
