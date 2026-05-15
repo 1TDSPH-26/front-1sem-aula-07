@@ -180,3 +180,4 @@
 // }, 5000);
 
 const botaoEntrar = document.getElementById()
+console.log(botaoEntrar);
