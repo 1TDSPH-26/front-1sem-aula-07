@@ -231,6 +231,8 @@ botaoEntrar.addEventListener("click", (e) => {
         if(userValidate !== null){
             if((userValidate.email === email.value) && (userValidate.senha === senha.value)){
                 alert("Login realizado com sucesso!");
+                // Redirecionando
+                window.location.href = "../index.html"
             } else {
                 throw new Error("Email ou senha incorretos!");
             }
