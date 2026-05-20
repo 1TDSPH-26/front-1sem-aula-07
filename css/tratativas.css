@@ -1,8 +1,8 @@
 
 input:valid{
-    border: 2px solid green;
+    border: 2px solid #046104;
 }
 
 input:invalid{
-    border: 1px solid red;
+    border: 1px solid #e28484;
 }
