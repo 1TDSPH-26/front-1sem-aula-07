@@ -163,14 +163,71 @@ comentario de bloco
 // botaoEntrar.textContent = "OK"
 // botaoEntrar.style.backgroundColor = "yellow"
 
-const botaoEntrar = document.getElementById("btnEntrar")
-// botaoEntrar.addEventListener("evento",fuçao de callback anonima);
-botaoEntrar.addEventListener("click", () => {
-    console.log("Clique no Botão");
+
+//Capturando o botão no DOM com o método querySelector()
+//const botaoEntrar = document.querySelector("button type=['submit']");
+const botaoEntrar = document.querySelector("#btnEntrar");
+
+// botaoEntrar.addEventListener("evento" , função de callback anônima );
+botaoEntrar.addEventListener("click" , (e)=>{
+
+    //Controlando o comportamento padrão do evento "submit"
+    e.preventDefault();
 
     //PARA CASA
-    //CApture os campos de EMAIL e SENHA
+    //Capture os campos de EMAIL e SENHA
     //Imprimir seus valores no console
+    const email = document.querySelector("#idEmail");
+    const senha = document.querySelector("#idSenha");
+
+    console.log(email.value);
+    console.log(senha.value);
+
+    //Validação dos dados entrantes
+    //Criando um objeto local para servir como base de validações
+    const userValidate = {
+        nome : "João",
+        email : "email@email.com",
+        senha : "12345",
+        idade : 20,
+        genero: "m",
+        trabalhando: true,
+        endereco:{
+            rua:"Rua Dois",
+            numero: 10,
+            cep: "12345-678",
+            cidade: "São Paulo",
+            estado: "SP"
+        },
+        telefone: [
+            {
+                ddd : 11,
+                numero: 123456789
+            },
+            {
+                ddd : 11,
+                numero: 987654321
+            }
+        ],
+        //função para imprimir o objeto userValidate
+        dados : function(){
+            console.log(`Meu nome é ${this.nome} e tenho ${this.idade} anos. Sou do gênero ${this.genero === "m" ? "masculino" : "feminino"
+            }. Atualmente  ${this.trabalhando ? "estou" : "não estou"} trabalhando. Estou residindo na ${this.endereco.rua}, número ${this.endereco.numero}, cep ${this.endereco.cep}, cidade ${this.endereco.cidade} e estado ${this.endereco.estado}. Caso queira falar comigo, meu telefone é (${this.telefone[0].ddd})${this.telefone[0].numero} ou pode deixar recado neste outro número: (${this.telefone[1].ddd})${this.telefone[1].numero}.`);
+        }
+    }
+
+    //Função de validação dos dados:
+    try {
+        if(userValidate !== null){
+            throw new Error("O usuário já está cadastrado");
+        }else{
+            throw new Error("O usuário não está cadastrado");
+        }
+
+    } catch (error) {
+        console.error(error.message);
+        alert(`Erro: ${error.message}`);
+    }
 
 });
 
