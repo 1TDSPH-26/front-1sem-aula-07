@@ -1,11 +1,8 @@
-
-
-
 //Declaração de variáveis com JS
 //3 tipos = var / let / const
 /*
-*Comentário de Bloco
-*/
+ *Comentário de Bloco
+ */
 
 //Declaração com var:
 // var nome = "Fiap";
@@ -48,7 +45,6 @@
 // //Utilizando template literals `` com interpolação ${ }
 // console.log(`O resultado é que ele ${resultado.toLowerCase()}.`);
 
-
 //Diferença entre var e let:
 // var nome1 = "Alê";
 // let nome2 = "Carlos";
@@ -70,7 +66,6 @@
 // console.log(numero2 + parseInt(numero)); // 123
 // console.log(parseFloat("12.5")); // 12.5
 // console.log(numero.toString()); // “123”
-
 
 // // Métodos de texto e de listas
 // let frase = "Estão chegando as provas!";
@@ -109,13 +104,11 @@
 // console.log(2 === 2);
 // console.log(2 !== 2);
 
-
 //Variáveis pós e pré incrementada.
 // let x = 10;
 // console.log(x++);
 // console.log(x);
 // console.log(++x);
-
 
 // //Exemplo de acumulação:
 // x += 5;
@@ -145,7 +138,7 @@
 //Recebendo parâmetros através do operador SPREAD:
 // function soma(...args){
 //     let resultado = 0;
-    
+
 //     for(let x = 0; x < args.length ; x++){
 //         resultado += args[x];
 //     }
@@ -158,11 +151,10 @@
 
 // soma(2,2,4,2);
 
-
 // //Arrow-Function
 // const soma = (...args) => {
 //     let resultado = 0;
-    
+
 //     for(let x = 0; x < args.length ; x++){
 //         resultado += args[x];
 //     }
@@ -199,23 +191,82 @@
 //     return a+b;
 // }
 
-
 // console.log(botaoEntrar.textContent);
 // botaoEntrar.textContent = "OK";
 // botaoEntrar.style.backgroundColor = "yellow";
 
-const botaoEntrar = document.getElementById("btnEntrar")
-// botaoEntrar.addEventListener("evento", função de callback anônima) 
-botaoEntrar.addEventListener("click", () =>{
-    console.log("CLIQUEI NO BOTÃO");
-
+//Capturando o botão no DOM com o método querySelector()
+//const botaoEntrar = document.querySelector("button type=['submit']");
+const botaoEntrar = document.querySelector("#btnEntrar");
+ 
+// botaoEntrar.addEventListener("evento" , função de callback anônima );
+botaoEntrar.addEventListener("click" , (e)=>{
+   
+    //Controlando o comportamento padrão do evento "submit"
+    e.preventDefault();
+ 
     //PARA CASA
     //Capture os campos de EMAIL e SENHA
     //Imprimir seus valores no console
-
+    const email = document.querySelector("#idEmail");
+    const senha = document.querySelector("#idSenha");
+   
+    console.log(email.value);
+    console.log(senha.value);
+ 
+    //Validação dos dados entrantes
+    //Criando um objeto local para servir como base de validações
+    const userValidate = {
+        nome : "João",
+        email : "email@email.com",
+        senha : "12345",
+        idade : 20,
+        genero: "m",
+        trabalhando: true,
+        endereco:{
+            rua:"Rua Dois",
+            numero: 10,
+            cep: "12345-678",
+            cidade: "São Paulo",
+            estado: "SP"
+        },
+        telefone: [
+            {
+                ddd : 11,
+                numero: 123456789
+            },
+            {
+                ddd : 11,
+                numero: 987654321
+            }
+        ],
+       
+        //função para imprimir o objeto userValidate
+        dados : function(){
+            console.log(`Meu nome é ${this.nome} e tenho ${this.idade} anos. Sou do gênero ${this.genero === "m" ? "masculino" : "feminino"
+            }. Atualmente  ${this.trabalhando ? "estou" : "não estou"} trabalhando. Estou residindo na ${this.endereco.rua}, número ${this.endereco.numero}, cep ${this.endereco.cep}, cidade ${this.endereco.cidade} e estado ${this.endereco.estado}. Caso queira falar comigo, meu telefone é (${this.telefone[0].ddd})${this.telefone[0].numero} ou pode deixar recado neste outro número: (${this.telefone[1].ddd})${this.telefone[1].numero}.`);
+        }
+    }
+ 
+    //Função de validação dos dados:
+    try {
+       
+        if(userValidate !== null){
+ 
+            if((userValidate.email === email.value) && (userValidate.senha === senha.value)){
+               
+            }
+ 
+        }else{
+            throw new Error("Sistema de informações inoperante.");
+        }
+ 
+    } catch (error) {
+        console.error(error.message);
+        alert(`Erro: ${error.message}`);
+    }
+ 
+ 
 });
 
-
-
-
-
+  
