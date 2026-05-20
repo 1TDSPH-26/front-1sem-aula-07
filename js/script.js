@@ -262,6 +262,19 @@ botaoEntrar.addEventListener("click" , (e)=>{
 
             if((userValidate.email === email.value) && (userValidate.senha === senha.value)){
                 alert("Login realizado com sucesso!");
+                //Redirecionando o usuário para a página inicial:
+                // window.location.href = "../index.html";
+
+                //Redirecionandor temporizado:
+                let contador = 5;
+
+                //Capturando a div que vai receber a mensagem:
+                let divMsg = document.querySelector("#msg");
+
+                //Injetando o contador na div capturada:
+                divMsg.innerHTML = `<p style="color:#046104;background-color:#75dc75; font-size:20px;border:2px solid #046104;text-align:center; padding:10px"> Você será redirecionado em ${contador} segundos...</p>`;
+
+
             }else{
                 throw new Error("Email ou senha incorretos!");
             }
