@@ -199,14 +199,95 @@
 //     return a+b;
 // }
 
-const botaoEntrar = document.getElementById("btnEntrar");
+//Capturando o botão no DOM com o método getElementById()
+//const botaoEntrar = document.getElementById("btnEntrar");
+
+//Capturando o botão no DOM com o método querySelector()
+//const botaoEntrar = document.querySelector("button type=['submit']");
+const botaoEntrar = document.querySelector("#btnEntrar");
 
 // botaoEntrar.addEventListener("evento" , função de callback anônima );
-botaoEntrar.addEventListener("click" , ()=>{
-    console.log("CLIQUEI NO BOTÃO");
-} );
-
+botaoEntrar.addEventListener("click" , (e)=>{
+   
+    //Controlando o comportamento padrão do evento "submit"
+    e.preventDefault();
 
     //PARA CASA
-    //CApture os campos de EMAIL e SENHA
+    //Capture os campos de EMAIL e SENHA
     //Imprimir seus valores no console
+    const email = document.querySelector("#idEmail");
+    const senha = document.querySelector("#idSenha");
+    
+    console.log(email.value);
+    console.log(senha.value);
+
+    //Validação dos dados entrantes
+    //Criando um objeto local para servir como base de validações
+    const userValidate = {
+        nome : "João",
+        email : "email@email.com",
+        senha : "12345",
+        idade : 20,
+        genero: "m",
+        trabalhando: true,
+        endereco:{
+            rua:"Rua Dois",
+            numero: 10,
+            cep: "12345-678",
+            cidade: "São Paulo",
+            estado: "SP"
+        },
+        telefone: [
+            {
+                ddd : 11,
+                numero: 123456789
+            },
+            {
+                ddd : 11,
+                numero: 987654321
+            }
+        ],
+        
+        //função para imprimir o objeto userValidate
+        dados : function(){
+            console.log(`Meu nome é ${this.nome} e tenho ${this.idade} anos. Sou do gênero ${this.genero === "m" ? "masculino" : "feminino"
+            }. Atualmente  ${this.trabalhando ? "estou" : "não estou"} trabalhando. Estou residindo na ${this.endereco.rua}, número ${this.endereco.numero}, cep ${this.endereco.cep}, cidade ${this.endereco.cidade} e estado ${this.endereco.estado}. Caso queira falar comigo, meu telefone é (${this.telefone[0].ddd})${this.telefone[0].numero} ou pode deixar recado neste outro número: (${this.telefone[1].ddd})${this.telefone[1].numero}.`);
+        }
+    }
+
+    //Função de validação dos dados:
+    try {
+        
+        if(userValidate !== null){
+
+            if((userValidate.email === email.value) && (userValidate.senha === senha.value)){
+                alert("Login realizado com sucesso!");
+                //Redirecionando o usuário para a página inicial:
+                // window.location.href = "../index.html";
+
+                //Redirecionandor temporizado:
+                let contador = 5;
+
+                //Capturando a div que vai receber a mensagem:
+                let divMsg = document.querySelector("#msg");
+
+                //Injetando o contador na div capturada:
+                divMsg.innerHTML = `<p style="color:#046104;background-color:#75dc75; font-size:20px;border:2px solid #046104;text-align:center; padding:10px"> Você será redirecionado em ${contador} segundos...</p>`;
+
+
+            }else{
+                throw new Error("Email ou senha incorretos!");
+            }
+
+        }else{
+            throw new Error("Sistema de informações inoperante.");
+        }
+
+    } catch (error) {
+        console.error(error.message);
+        alert(`Erro: ${error.message}`); 
+        
+    }
+
+
+});
