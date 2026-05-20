@@ -174,8 +174,71 @@
 // botaoEntrar.textContent = "ok";
 // botaoEntrar.style.backgroundColor = "yellow";
 
-const botaoEntrar = document.getElementById("btnEntrar")
+// Capturando o botão no DOM com metodo getElementById()
+// const botaoEntrar = document.getElementById("btnEntrar")
+
+// Capturando o botão no DOM com o metodo querySelector()
+const botaoEntrar = document.querySelector("#btnEntrar");
 // botaoEntrar.addEventListener("evento", função de callback)
-botaoEntrar.addEventListener("click", () => {
+botaoEntrar.addEventListener("click", (e) => {
+    // Controlando o comportamento padrão do evento
+    e.preventDefault();
+
     console.log("Cliquei no botão");
+
+    const email = document.querySelector(#idEmail);
+    const senha = document.querySelector(#idSenha);
+
+    console.log(email.value);
+    console.log(senha.value);
+
+    // Validação dos dados de entrada
+    // Criando um objeto local para servir como base de validações
+    const userValidate = {
+        nome : "Giovanni",
+        email : "email@email.com",
+        senha : "12345",
+        idade : 20,
+        genero : "m",
+        trabalhando : true,
+        endereco : {
+            rua : "Rua Dois",
+            numero : 10,
+            cep : "12345-678",
+            cidade : "São Paulo",
+            estado : "SP"
+        },
+        telefone : [
+            {
+                ddd : 11,
+                numero : 123456789
+            },
+            {
+                ddd : 11,
+                numero : 987654321
+            }
+        ],
+
+
+        // Função para imprimir o objeto userValidade
+        dados : function(){
+            console.log(`Meu nome é ${this.nome} e tenho ${this.idade} anos. Sou do gênero ${this.genero === "m" ? "Masculino" : "Feminino"}. Atualmente ${this.trabalhando ? "estou" : "não estou"} trabalhando. Estou residindo na rua ${this.endereco.rua}, CEP ${this.endereco.cep}, cidade ${this.endereco.cidade} e estado ${this.endereco.estado}. Caso queira falar comigo, meu telefone é (${this.telefone[0].ddd})${this.telefone[0].numero} ou pode deixar recado neste outro número: (${this.telefone[1].ddd})${this.telefone[1].numero}.`)
+        }
+    }
+
+    // Função de validação de dados
+    try {
+        if(userValidate !== null){
+            if((userValidate.email === email.value) && (userValidate.senha === senha.value)){
+                alert("Login realizado com sucesso!");
+            } else {
+                throw new Error("Email ou senha incorretos!");
+            }
+        } else {
+            throw new Error("Sistema de informações inoperante");
+        }
+    } catch (error) {
+        console.error(error.message);
+        alert(`Erro ${error.message}`);
+    }
 })
