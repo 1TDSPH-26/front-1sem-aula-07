@@ -1,8 +1,13 @@
 
-input:valid{
-    border: 2px solid #046104;
+
+
+.danger{
+    border: 1px solid #c30404;
+    background-color: #c77070;
+    color: #fff;
 }
 
-input:invalid{
-    border: 1px solid #e28484;
+.success{
+     border: 2px solid #046104;
+    background-color: #72bf72;
 }
